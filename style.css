@@ -1,0 +1,151 @@
+/* Main styles */
+
+body {
+    margin: 0;
+}
+
+p {
+    text-align: justify;
+    padding: 1em;
+
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+
+/* Element containers */
+
+.container {
+    display: flex;
+    margin: 2em;
+}
+
+.img-cont {
+    margin-right: 1.5em;
+    height: fit-content;
+
+    border: 1.5px solid darkblue;
+    border-radius: 3px;
+}
+
+.img-cont img {
+    width: 40em;
+    height: auto;
+}
+
+.txt-cont {
+    flex: 1;
+}
+
+/* Menu-related styles */
+
+.menu {
+    background-color: rgb(58, 131, 234);
+    background-image: linear-gradient(to right, #008DDA, #003366);
+
+    position: fixed;
+    float:inline-start;
+    top: 0;
+    width: 100%;
+    height: 5em;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.footer {
+    background-color: rgb(58, 131, 234);
+    background-image: linear-gradient(to right, #003366, #008DDA);
+
+    position: fixed;
+    float:inline-end;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+
+}
+
+.menu ul, .footer ul {
+    list-style-type: none;
+
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden ;
+}
+
+.menu li, .footer li {
+    display: inline-block;
+    margin: 0 1m;
+    padding-inline: 1em;
+    list-style-type: none; /*Remove the bullet points*/
+
+    font-family: 'Arial black';
+    vertical-align: middle;
+}
+
+.menu li a, .footer li a {
+    text-decoration: none;
+    
+    text-align: center;
+    display: block;
+}
+
+.menu li a:hover, .footer li a:hover {
+    color: #aeddf6;
+}
+
+.menu img {
+    margin: 0;
+    object-position: center;
+}
+
+.menu .logo {
+    flex-shrink: 0; /*Avoids the browser to shrink the logo image*/
+}
+
+.menu a, .footer a {
+    color: white;
+}
+
+
+
+
+
+
+
+
+#homeBody {
+    background-image: url(/img/The_cathedral_in_Oviedo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    float: left;
+    padding: 100px;
+}
+
+
+main {
+    margin-top: 5em;
+    height: 100%;
+
+    /*background-image: url(img/The_cathedral_in_Oviedo.png);
+    opacity: 0.5;*/
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+
+
+
+
+
+.darkened-image {
+    filter: brightness(50%);
+    background-image: url(img/The_cathedral_in_Oviedo.png);
+    height: 100%;
+    width: 100%;
+}
