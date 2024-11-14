@@ -20,6 +20,7 @@ class Footer extends HTMLElement {
                         <li><a href="#">An albino</a></li>
                         <li><a href="#">A mosquito</a></li>
                         <li><a href="#">My libido</a></li>
+                        <li><a href="#">A denial</a></li>
                     </ul>
                 </nav>
             </footer>
