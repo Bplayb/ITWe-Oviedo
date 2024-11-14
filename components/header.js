@@ -24,11 +24,11 @@ class Header extends HTMLElement {
                             </div>
                         </a></li>
 
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">What to do</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Our culture</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="whatToDo.html">What to do</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="culture.html">Our culture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
