@@ -18,17 +18,17 @@ class Header extends HTMLElement {
             <!-- Top fixed menu -->
                 <nav class="menu">
                     <ul>
-                        <li><a href="index.html">
+                        <li><a href="home.html">
                             <div class="logo">
                                 <img title="City of Oviedo" src="favicon.png" height=50px alt="Home image">
                             </div>
                         </a></li>
 
-                        <li><a href="#">Main page</a></li>
-                        <li><a href="#">What to do</a></li>
-                        <li><a href="#">Tourism offices</a></li>
-                        <li><a href="#">Our culture</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="whatToDo.html">What to do</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="culture.html">Our culture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
             </header>
