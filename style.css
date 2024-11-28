@@ -1,7 +1,24 @@
 /* Main styles */
 
-body {
+* {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
     margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
 }
 
 p {
@@ -10,6 +27,23 @@ p {
 
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
+
+
+main {
+    margin-top: 4em;
+    height: 100%;
+
+    /*background-image: url(img/The_cathedral_in_Oviedo.png);
+    opacity: 0.5;*/
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    align-items: center;
+}
+
+
 
 
 /* Element containers */
@@ -37,6 +71,13 @@ p {
 }
 
 
+.container {
+    margin-top: 4em;
+}
+
+
+
+
 /* Menu-related styles */
 
 .menu {
@@ -47,35 +88,33 @@ p {
     float:inline-start;
     top: 0;
     width: 100%;
-    height: 5em;
+    height: 4em;
 
     box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+
+    font-weight: bold;
 }
 
 .footer {
     background-color: rgb(58, 131, 234);
     background-image: linear-gradient(to right, #003366, #008DDA);
 
-    position: fixed;
-    float:inline-end;
     text-align: center;
-    bottom: 0;
-    width: 100%;
     height: 3em;
+    padding: 0.5em 0;
 
 }
 
 .menu ul, .footer ul {
     list-style-type: none;
 
-    margin: 5px;
     padding: 5px;
     overflow: hidden ;
 }
 
 .menu li, .footer li {
     display: inline-block;
-    margin: 0 1m;
+    
     padding-inline: 1em;
     list-style-type: none; /*Remove the bullet points*/
 
@@ -109,6 +148,72 @@ p {
 
 
 
+/* Headers */
+
+h1 {
+    padding: 0.5em;
+
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+    font-size: 1.4em;
+
+    color: white;
+    background-color: #003366;
+}
+
+
+
+
+/* Images handling */
+
+.photos {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+
+    overflow: hidden;  /* No scrolling */
+    margin: 20px 0;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+}
+
+.photo-carousel {
+    position: relative;
+    width: 75%;
+    height: 35em;
+
+    margin: 0 auto;  /* This fixed the carousel being fixated on the left side */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background-image: url(img/oviedoVista.png);
+}
+
+.carousel-imgs {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-imgs img { /* Specific rules for the images */
+    flex: 0 0 100%;
+    width: 100%;
+    height: 35em;
+
+    object-fit: cover;
+}
+
+
 
 
 
@@ -125,20 +230,50 @@ p {
 }
 
 
-main {
-    margin-top: 5em;
-    height: 100%;
 
-    /*background-image: url(img/The_cathedral_in_Oviedo.png);
-    opacity: 0.5;*/
+/* Buttons */
+
+.prev-btn {
+    position: absolute;
+    top: 50%;  /*Place it in the middle*/
+
+    transform: translateY(-50%);
+
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+
+    font-size: 2em;
     
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    padding: 0.5em 0.7em;
+    z-index: 1;
 
+    user-select: none;
+    cursor: pointer;
 
+    left: 0.2em;
 }
 
+.next-btn {
+    position: absolute;
+    top: 50%;  /*Place it in the middle*/
+
+    transform: translateY(-50%);
+
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: none;
+
+    font-size: 2em;
+    
+    padding: 0.5em 0.7em;
+    z-index: 1;
+
+    user-select: none;
+    cursor: pointer;
+
+    right: 0.2em;
+}
 
 
 
@@ -149,4 +284,20 @@ main {
     background-image: url(img/The_cathedral_in_Oviedo.png);
     height: 100%;
     width: 100%;
+}
+
+
+.carousel-text {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.3em;
+
+    color:white;
+    font-size: 1em;
+    font-weight: bold;
+
+    background-color: rgba(0,0,0,0.3);
+
+    padding: 0.5em 0.7em;
+    border-radius: 5px;
 }

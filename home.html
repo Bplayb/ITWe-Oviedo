@@ -19,15 +19,41 @@
 
 </head>
 <body>
-
+    
     <custom-header></custom-header>
 
     <main>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, dolorem asperiores consequuntur quis cupiditate natus itaque aliquam. Necessitatibus, voluptatum dolores sequi recusandae maiores exercitationem repellat dolore beatae non qui eveniet suscipit aliquam laudantium eaque sint nesciunt perferendis labore fuga nihil id ipsum? Facilis, quo natus rem illo modi impedit dolor? Possimus cum ullam saepe incidunt tempore beatae! Nulla dolores iure quisquam cupiditate odit, eligendi explicabo. Debitis libero fugiat omnis alias veniam harum, incidunt exercitationem nulla, modi, fugit ipsum quia officia eligendi provident necessitatibus corrupti atque cupiditate repudiandae nisi accusamus obcaecati! Iste reprehenderit unde eum mollitia culpa velit exercitationem sapiente. Inventore.
-        </p>
+        <h1>
+            Welcome to the official webpage of the City of Oviedo
+        </h1>
         
-        <div class="container">
+        <section class="photos">
+            <div class="photo-carousel">
+
+                <!-- Photos to be displayed in the carousel -->
+                <div class="carousel-imgs">
+                    <img src="img/oviedoVista.png" alt="Photo of Oviedo on the distance">
+                    <img src="img/catedralNoche.png" alt="Photo of the Cathedral of Oviedo at night">
+                    <img src="img/princessAwards/premiosPrincesaInterior.png" alt="Photo at the ceremony of the Princess of Asturias Awards">
+                    <img src="img/monuments/mafalda.png" alt="Photo of the Mafalda's statute at the Saint Francisco park">
+                    <img src="img/monuments/SMLillo.png" alt="Photo of the Saint Miguel of Lillo Pre-Romanesque building">
+                </div>
+
+                <!-- Buttons for manually changing the current displayed photo -->
+                <button class="prev-btn">&#x1F890</button>
+                <button class="next-btn">&#x1F892</button>
+
+                <!-- Text displayed on the foreground of the images -->
+                <div class="carousel-text">Explore the beauty of our most magical places</div>
+            </div>
+        </section>
+
+        <!-- Script for controlling the carousel behaviour -->
+        <script src="components/carousel.js"></script>
+
+
+
+        <!--<div class="container">
             <div class="img-cont">
                 <img src="img/catedralNoche.png" alt="The Cathedral of Oviedo">
             </div>
@@ -37,7 +63,7 @@
                     The Cathedral of San Salvador of Oviedo today displays an array of architectural styles, from Pre-Romanesque to Baroque, including Romanesque, Gothic and Renaissance parts.</p>
             </div>
             
-        <div>
+        <div>-->
 
 
     </main>
