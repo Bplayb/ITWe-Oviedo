@@ -13,7 +13,6 @@
 html,body {
     margin: 0;
     padding: 0;
-    xxxheight: 100%;
 }
 
 body {
@@ -35,12 +34,28 @@ main {
     margin-top: 4em;
     height: 100%;
 
+    background-color: #e2ebf0a7;
     /*background-image: url(img/The_cathedral_in_Oviedo.png);
     opacity: 0.5;*/
 
     align-items: center;
 }
 
+main img.decorative {
+    float: left;
+    margin: 2em;
+
+    width: 45em;
+    height: auto;
+
+    border: 2px solid #003366;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+
+main p {
+    font-size: 1.2em;
+}
 
 .main-w-menu { /* Lateral menu layout */
     margin-top: 4em;
@@ -48,11 +63,9 @@ main {
     
     display: flex;
     flex: 1;
+    justify-content: center;
 }
 
-.main-w-menu p {
-    xfloat: left;
-}
 
 .main-w-menu img {
     float: right;
@@ -71,6 +84,14 @@ main {
     margin-bottom: 3em;
 }
 
+.content-w-menu li {
+    list-style-type: georgian;
+    clear: right;
+
+    margin-left: 3em;
+    margin-bottom: 1em;
+}
+
 
 
 /* Element containers */
@@ -78,6 +99,11 @@ main {
 .container {
     display: flex;
     margin: 2em;
+}
+
+main .container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .img-cont {
@@ -91,6 +117,23 @@ main {
 .img-cont img {
     width: 40em;
     height: auto;
+}
+
+.img-container-3 {
+    margin-left: 9em; 
+    margin-top: 2em; 
+    margin-bottom: 2em; 
+    align-content: center; 
+    vertical-align: middle;
+}
+
+.img-container-3 img {
+    float: none; 
+    margin: 0; 
+    align-items: center; 
+    vertical-align: middle;
+    height: 13em; 
+    width: auto;
 }
 
 .txt-cont {
@@ -200,7 +243,7 @@ main {
 
     box-shadow: 2px 0 5px rgba(0,0,0,0.4);
 
-    background-color: gainsboro;
+    background-color: #e2ebf0a7;
 }
 
 .lateral-menu ul {
@@ -213,7 +256,7 @@ main {
     flex-grow: 1;
 
     justify-content: center;
-    margin:0;
+    margin:5px;
     margin-bottom: 1em;
     list-style-type: none; /*Remove the bullet points*/
 
@@ -226,7 +269,7 @@ main {
     border-collapse: collapse;
     border-style: solid;
 
-    background-color: rgb(237, 249, 255);
+    background-color: rgba(202, 230, 244, 0.593);
 }
 
 .lateral-menu a {
@@ -306,6 +349,7 @@ h2 {
     padding-left: 0.5em;
     padding-right: 0.5em;
 
+    
 }
 
 .photo-carousel {
@@ -321,6 +365,10 @@ h2 {
     overflow: hidden;
 
     background-image: url(img/oviedoVista.png); /* Placeholder */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+
+    border: 6px solid #008DDA;
+    border-radius: 4px;
 }
 
 .carousel-imgs {
@@ -403,14 +451,6 @@ h2 {
 
 
 
-
-
-.darkened-image {
-    filter: brightness(50%);
-    background-image: url(img/The_cathedral_in_Oviedo.png);
-    height: 100%;
-    width: 100%;
-}
 
 
 .carousel-text {
