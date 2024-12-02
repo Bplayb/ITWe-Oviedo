@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.01em;
 
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@
 html,body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    xxxheight: 100%;
 }
 
 body {
@@ -23,7 +24,8 @@ body {
 
 p {
     text-align: justify;
-    padding: 1em;
+    padding: 2em;
+    padding-bottom: 0;
 
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
@@ -35,14 +37,39 @@ main {
 
     /*background-image: url(img/The_cathedral_in_Oviedo.png);
     opacity: 0.5;*/
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 
     align-items: center;
 }
 
+
+.main-w-menu { /* Lateral menu layout */
+    margin-top: 4em;
+    height: 100%;
+    
+    display: flex;
+    flex: 1;
+}
+
+.main-w-menu p {
+    xfloat: left;
+}
+
+.main-w-menu img {
+    float: right;
+    margin: 2em;
+
+    width: 20em;
+    height: auto;
+
+    border: 2px solid #003366;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+
+.content-w-menu {
+    margin-left: 8em;
+    margin-bottom: 3em;
+}
 
 
 
@@ -78,6 +105,7 @@ main {
 
 
 
+
 /* Menu-related styles */
 
 .menu {
@@ -87,6 +115,7 @@ main {
     position: fixed;
     float:inline-start;
     top: 0;
+    z-index: 10;
     width: 100%;
     height: 4em;
 
@@ -101,8 +130,10 @@ main {
 
     text-align: center;
     height: 3em;
+    z-index: 100;
     padding: 0.5em 0;
 
+    margin-top: auto;
 }
 
 .menu ul, .footer ul {
@@ -133,6 +164,10 @@ main {
     color: #aeddf6;
 }
 
+.menu li a:active, .footer li a:active {
+    color: #ffef75;
+}
+
 .menu img {
     margin: 0;
     object-position: center;
@@ -148,7 +183,85 @@ main {
 
 
 
+.lateral-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top: 4em;
+    left:0;
+
+    width: 8em;
+    height: calc(100vh - 4em);
+
+    justify-content: space-evenly;
+    align-items: stretch;
+
+
+    box-shadow: 2px 0 5px rgba(0,0,0,0.4);
+
+    background-color: gainsboro;
+}
+
+.lateral-menu ul {
+    width: 100%;
+    z-index: 10;
+}
+
+.lateral-menu li {
+    display: flex;
+    flex-grow: 1;
+
+    justify-content: center;
+    margin:0;
+    margin-bottom: 1em;
+    list-style-type: none; /*Remove the bullet points*/
+
+    font-family: 'Arial black';
+    align-items: center;
+
+    border-radius: 0;
+    border-width: 1px;
+    border-color: #008DDA;
+    border-collapse: collapse;
+    border-style: solid;
+
+    background-color: rgb(237, 249, 255);
+}
+
+.lateral-menu a {
+    display: block;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 1em;
+
+    text-decoration: none;
+
+    color: #003366;
+}
+
+.lateral-menu a:hover {
+    color: #008DDA;
+}
+
+.lateral-menu a:active {
+    color: black;
+}
+
+
+
+
+
+
+
 /* Headers */
+
+h1, h2 {
+    clear: both;
+}
 
 h1 {
     padding: 0.5em;
@@ -159,6 +272,19 @@ h1 {
 
     color: white;
     background-color: #003366;
+}
+
+h2 {
+    padding: 0.5em;
+    padding-left: 2em;
+    margin-top: 1.5em;
+
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-style: italic;
+    font-size: 1em;
+
+    color: white;
+    background-image: linear-gradient(to right, #008DDA, white);
 }
 
 
@@ -194,7 +320,7 @@ h1 {
     justify-content: center;
     overflow: hidden;
 
-    background-image: url(img/oviedoVista.png);
+    background-image: url(img/oviedoVista.png); /* Placeholder */
 }
 
 .carousel-imgs {
@@ -239,7 +365,7 @@ h1 {
 
     transform: translateY(-50%);
 
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     color: white;
     border: none;
 
@@ -260,7 +386,7 @@ h1 {
 
     transform: translateY(-50%);
 
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     color: white;
     border: none;
 
@@ -296,8 +422,19 @@ h1 {
     font-size: 1em;
     font-weight: bold;
 
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
 
     padding: 0.5em 0.7em;
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+/* Media declarations */
