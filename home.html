@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TODO Write some attractive information about the city.">
+    <meta name="description" content="TODO Write some attractive information about the city."> <!--TODO-->
     <meta name="keywords" content="oviedo turism spain asturias capital spain gijon aviles">
     
     <title>Oviedo: Welcome</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Script for header -->
     <script src="components/header.js" type="text/javascript" defer></script>
@@ -19,26 +19,63 @@
 
 </head>
 <body>
-
+    
     <custom-header></custom-header>
 
     <main>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, dolorem asperiores consequuntur quis cupiditate natus itaque aliquam. Necessitatibus, voluptatum dolores sequi recusandae maiores exercitationem repellat dolore beatae non qui eveniet suscipit aliquam laudantium eaque sint nesciunt perferendis labore fuga nihil id ipsum? Facilis, quo natus rem illo modi impedit dolor? Possimus cum ullam saepe incidunt tempore beatae! Nulla dolores iure quisquam cupiditate odit, eligendi explicabo. Debitis libero fugiat omnis alias veniam harum, incidunt exercitationem nulla, modi, fugit ipsum quia officia eligendi provident necessitatibus corrupti atque cupiditate repudiandae nisi accusamus obcaecati! Iste reprehenderit unde eum mollitia culpa velit exercitationem sapiente. Inventore.
-        </p>
+        <h1>
+            Welcome to the un-official webpage of the City of Oviedo
+        </h1>
         
+        <section class="photos">
+            <div class="photo-carousel">
+
+                <!-- Photos to be displayed in the carousel -->
+                <div class="carousel-imgs">
+                    <img src="img/oviedoVista.png" alt="Photo of Oviedo on the distance">
+                    <img src="img/catedralNoche.png" alt="Photo of the Cathedral of Oviedo at night">
+                    <img src="img/princessAwards/premiosPrincesaInterior.png" alt="Photo at the ceremony of the Princess of Asturias Awards">
+                    <img src="img/monuments/mafalda.png" alt="Photo of the Mafalda's statute at the Saint Francisco park">
+                    <img src="img/monuments/SMLillo.png" alt="Photo of the Saint Miguel of Lillo Pre-Romanesque building">
+                </div>
+
+                <!-- Buttons for manually changing the current displayed photo -->
+                <button class="prev-btn">&#x1F890</button>
+                <button class="next-btn">&#x1F892</button>
+
+                <!-- Text displayed on the foreground of the images -->
+                <div class="carousel-text">Explore the beauty of our most magical places</div>
+            </div>
+        </section>
+
+        <!-- Script for controlling the carousel behaviour -->
+        <script src="components/carousel.js"></script>
+
         <div class="container">
-            <div class="img-cont">
-                <img src="img/The_cathedral_in_Oviedo.png" alt="The Cathedral of Oviedo">
-            </div>
+            <img class="decorative" src="img/oviedo-letters.png" alt="Big metal letters in a square that spell Oviedo">
+        <br>
+        <br>
 
-            <div class="txt-cont">
-                <p> <i><b>TODO</b></i> The Metropolitan Cathedral Basilica of the Holy Saviour or Cathedral of San Salvador (Spanish: Catedral Metropolitana Basílica de San Salvador, Latin: Sancta Ovetensis) is a Roman Catholic church and minor basilica in the centre of Oviedo, in the Asturias region of northern Spain.
-                    The Cathedral of San Salvador of Oviedo today displays an array of architectural styles, from Pre-Romanesque to Baroque, including Romanesque, Gothic and Renaissance parts.</p>
-            </div>
-            
-        <div>
+        <div style="flex: auto;">
+            <br>
+            <p>
+                Be welcome to the webpage of Oviedo, the capital of Asturias, the capital of the <i>Paradise</i>! 
+            </p>
+            <p>
+                Here, you will find several sections 
+                with most of the information about the city, including our rich history and culture, the most breathtaking places and the services that 
+                are offered, among other interesting things.
+            </p>
+            <p>
+                If you have any doubt, or want to get in contact with a representative of the city council, 
+                you will find all the necessary information in the <a href="contact.html">contact</a> section.
+            </p>
+        </div>
 
+       
+        </div>
+        
+        <br>
 
     </main>
 
