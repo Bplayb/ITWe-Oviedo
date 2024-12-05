@@ -45,8 +45,8 @@ main img.decorative {
     float: left;
     margin: 2em;
 
-    width: 45em;
-    height: auto;
+    width: 55%;
+    height: 20%;
 
     border: 2px solid #003366;
     border-radius: 4px;
@@ -453,6 +453,11 @@ h2 {
 
 
 
+
+/* Other */
+
+
+
 .carousel-text {
     position: absolute;
     bottom: 0.5em;
@@ -469,7 +474,15 @@ h2 {
 }
 
 
+main .text-home {
+    flex: auto;
 
+    margin-top: 2em; 
+    margin-bottom: 2em;
+
+    background-color: rgba(58, 131, 234, 0.3);
+    border-radius: 20px; 
+}
 
 
 /* Container for the contact cards */
