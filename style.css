@@ -48,8 +48,6 @@ main {
     height: 100%;
 
     background-color: #e2ebf0a7;
-    /*background-image: url(img/The_cathedral_in_Oviedo.png);
-    opacity: 0.5;*/
 
     align-items: center;
 }
@@ -70,13 +68,18 @@ main p {
     font-size: 1.2em;
 }
 
-.main-w-menu { /* Lateral menu layout */
+.main-w-menu { 
     margin-top: 4em;
     height: 100%;
-    
+
     display: flex;
-    flex: 1;
-    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 16px; 
+    flex-wrap: wrap; 
 }
 
 
@@ -95,6 +98,9 @@ main p {
 .content-w-menu {
     margin-left: 8em;
     margin-bottom: 3em;
+
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .content-w-menu li {
@@ -141,8 +147,10 @@ main .container {
 
 .img-container-3 {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    flex: 1 1 auto;
+    
+    justify-content: center; 
+    align-items: center; 
     margin-left: 0em;
 }
 
@@ -164,20 +172,22 @@ main .container {
 .image-container-camino {
     display: flex;
     justify-content: center;
-    gap: 5px; /* Adds space between images */
+    gap: 5px; 
   }
   
   .image-container-camino img {
-    width: 20%; /* Adjust this percentage to control image size */
+    width: 20%; 
     height: auto;
-    border-radius: 8px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow */
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s ease-in-out;
   }
   
   .image-container-camino img:hover {
-    transform: scale(1.05); /* Optional: enlarges image slightly on hover */
+    transform: scale(1.05); 
   }
+
+
 
 
 /* Menu-related styles */
@@ -258,6 +268,9 @@ main .container {
 
 
 .lateral-menu {
+    z-index: 100; 
+    overflow-y: auto; 
+
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -275,6 +288,8 @@ main .container {
     box-shadow: 2px 0 5px rgba(0,0,0,0.4);
 
     background-color: #e2ebf0a7;
+
+    flex: 0 1 250px;
 }
 
 .lateral-menu ul {
@@ -574,9 +589,6 @@ main .text-home {
     color: #003366;
     font-size: 1.1em;
 }
-
-/* Media declarations */
-
 
 
 
