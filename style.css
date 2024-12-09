@@ -265,7 +265,7 @@ main .container {
     color: white;
 }
 
-}
+
 /* Lateral menu */
 .lateral-menu {
     position: fixed;
@@ -618,79 +618,4 @@ td.name-desc {
 td.photo {
     width: 30%; 
     text-align: center; 
-}
-/* Lateral menu */
-.lateral-menu {
-    position: fixed;
-    top: 4em;
-    left: 0;
-    width: 135px;
-    height: calc(100vh - 4em);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    background: linear-gradient(180deg, #003366 0%, #008DDA 100%);
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
-    padding-top: 1em;
-    overflow-y: auto;
-    z-index: 100;
-    border-right: 3px solid #008DDA;
-}
-
-.lateral-menu ul {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    text-align: center;
-}
-
-.lateral-menu li {
-    width: 100%;
-    margin: 0.3em 0; 
-}
-
-.lateral-menu a {
-    display: block;
-    width: 100%;
-    padding: 0.4em 0.8em;
-    text-decoration: none;
-    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: #ffffff;
-    background: transparent;
-    transition: background 0.3s ease, color 0.3s ease;
-    border-radius: 6px;
-}
-
-.lateral-menu a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #ffef75;
-}
-
-.lateral-menu a:active {
-    background: #ffef75;
-    color: #003366;
-}
-
-.lateral-menu .active {
-    background: #ffffff;
-    color: #003366;
-    font-weight: bolder;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-.lateral-menu li:not(:last-child) {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-
-.lateral-menu {
-    transition: transform 0.3s ease-in-out;
-}
-
-.lateral-menu:hover {
-    transform: translateX(0);
 }
