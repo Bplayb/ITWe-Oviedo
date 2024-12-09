@@ -619,3 +619,9 @@ td.photo {
     width: 30%; 
     text-align: center; 
 }
+
+
+section li {
+    margin-right: 2em;
+    text-align: justify;
+}
