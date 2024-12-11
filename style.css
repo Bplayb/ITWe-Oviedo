@@ -209,6 +209,8 @@ main .container {
 }
 
 .footer {
+    position: relative;
+
     background-color: rgb(58, 131, 234);
     background-image: linear-gradient(to right, #003366, #008DDA);
 
